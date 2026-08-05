@@ -1,0 +1,27 @@
+.container {
+    max-width: 1090px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (width >= 360px) and (width <= 768px) {
+    .header__container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
